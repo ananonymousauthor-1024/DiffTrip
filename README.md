@@ -1,8 +1,10 @@
 # DiffTrip
 
+This folder provides a reference implementation of DiffTrip, as described in the paper: "Trust Your Trip Recommender: An Explicit Diffusion-Guided Trajectory Planning Approach", which, submitted to WWW 2024 for anonymous review.
+
 ## Brief Introduction
 
-DiffTrip leverages Denoising Diffusion Probabilistic Models (DDPMs) to gradually align the generated trajectory with the tourist’s intent. The core idea stems from one of the characteristics of DDPM: the progressive data generation process. We employ an explicit condition-injecting strategy during the inference stage to achieve the alignment. This strategy progressively substitutes the source and destination of the generated trajectory with the ground truth of the source/destination (from the tourist’s query), enabling the model to iteratively refine itself and ultimately produce realistic, intent-consistent trajectories. 
+DiffTrip leverages Denoising Diffusion Probabilistic Models (DDPMs) to gradually align the generated trajectory with the tourist’s intent. The core idea stems from one of the characteristics of DDPM: the progressive data generation process. We propose & employ an explicit condition-injecting strategy during the inference stage to achieve the alignment. This strategy progressively substitutes the source & destination of the generated trajectory with the ground truth of the source & destination (from the tourist’s query), enabling the model to iteratively refine itself and ultimately produce realistic, intent-consistent trajectories. 
 
 ## Environmental Requirements
 
@@ -40,12 +42,12 @@ pip install scikit-learn
 |    asset    |              Metadata and preprocessing process              |
 |    data     |                   Preprocessed input data                    |
 |   results   |             Storage related experimental results             |
-|   T-Base    | Transformer-Based model(Base) and the Base using clipping-merging strategy(Base-CM) |
-| T-Base-WSE  | Transformer-Based model using weighted classification loss in start and end points |
+|   T-Base    | Transformer-based model (Base) and the Base using clipping-merging strategy (Base-CM) |
+| T-Base-WSE  | Transformer-based model using weighted classification loss on start and end points (Weighted Source and Destination with Base, Base-WSE for short) |
 |   T-Diff    |                 the source code of DiffTrip                  |
-| T-Diff-EPS  |       DiffTrip predicts epsilon(EPS) and calculate x0        |
-|  T-Diff-FS  |           DiffTrip using 4 steps fast sampling(FS)           |
-|  README.md  |                  This instruction document                   |
+| T-Diff-EPS  |               DiffTrip predicts epsilon (EPS)                |
+|  T-Diff-FS  |           DiffTrip using 4 steps fast sampling (FS)          |
+|  README.md  |                             --                               |
 |   run.bat   |                 Script file for running code                 |
 
 ## How to run our programs
