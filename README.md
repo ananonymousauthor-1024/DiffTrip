@@ -1,6 +1,6 @@
 # DiffTrip
 
-This folder provides a reference implementation of DiffTrip, as described in the paper: "Trust Your Trip Recommender: An Explicit Diffusion-Guided Trajectory Planning Approach", which, submitted to WWW 2024 for anonymous review.
+This folder provides a reference implementation of DiffTrip, as described in the paper: "Replace and Refine: Faithful Trip Recommendation with Explicit Diffusion Guidance", which, submitted to KDD 2024 for anonymous review.
 
 ## Brief Introduction
 
