@@ -120,4 +120,4 @@ to run this script file directly.  You can also directly paste commands into the
 python .\T-Diff\train_diffusion.py --dataset Osak --lr 0.01 --batch_size 4 --d_model 16
 ```
 
-Hope such an implementation could help you on your projects. Any comments and feedback are appreciated.
+% Hope such an implementation could help you on your projects. Any comments and feedback are appreciated.
